@@ -10,13 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var incognitomodeSwitch: UISwitch!
     @IBOutlet weak var roomidTextField: UITextField!
+    @IBOutlet weak var incognitomodeSwitch: UISwitch!
+    
     override func viewDidLoad() {
-       
+    
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,14 +31,14 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navController = segue.destination as? UINavigationController {
-            let dest = navController.topViewController as! ChatRoomTableViewController
+            let dest = navController.topViewController as! ChatTableRoomViewController
             dest.roomKey = self.roomidTextField.text!
             dest.username = self.usernameTextField.text!
             dest.isIncog = self.incognitomodeSwitch.isOn
     }
 
     
-
+    }
 
 }
 

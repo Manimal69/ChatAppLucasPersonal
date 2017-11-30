@@ -70,9 +70,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="incognitomodeSwitch" destination="cRG-HX-LVB" id="YxM-Ub-Xj2"/>
-                        <outlet property="roomidTextField" destination="A6a-3b-CrX" id="MOW-rc-HC0"/>
-                        <outlet property="usernameTextField" destination="Wdm-96-1fl" id="Qsa-PF-tER"/>
+                        <outlet property="incognitomodeSwitch" destination="cRG-HX-LVB" id="N2g-7h-6K2"/>
+                        <outlet property="roomidTextField" destination="A6a-3b-CrX" id="pbU-Mg-rSs"/>
+                        <outlet property="usernameTextField" destination="Wdm-96-1fl" id="dBq-WL-mWm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,7 +94,7 @@
                                 <navigationItem title="Chat Room" id="gTX-eG-RC5">
                                     <barButtonItem key="leftBarButtonItem" title="Back" id="J49-oz-25Y">
                                         <connections>
-                                            <segue destination="6Cf-zW-9xx" kind="unwind" unwindAction="cancelToChatViewControllerWithSegue:" id="Qc4-0q-IFR"/>
+                                            <segue destination="6Cf-zW-9xx" kind="unwind" unwindAction="cancelToChatViewControllerWithSegue:" id="8um-fr-m5T"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
