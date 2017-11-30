@@ -12,7 +12,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var roomidTextField: UITextField!
     @IBOutlet weak var incognitomodeSwitch: UISwitch!
-    
+    @IBAction func cancelToChatViewController(segue:UIStoryboardSegue) {
+        
+    }
+
     override func viewDidLoad() {
     
         super.viewDidLoad()
@@ -25,9 +28,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func cancelToChatViewController(segue:UIStoryboardSegue) {
-        
-    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navController = segue.destination as? UINavigationController {

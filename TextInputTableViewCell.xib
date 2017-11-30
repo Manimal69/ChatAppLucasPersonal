@@ -30,10 +30,16 @@
                         <rect key="frame" x="263" y="6" width="36" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Send"/>
+                        <connections>
+                            <action selector="sendText:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wOV-Pi-dIA"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="sendButton" destination="dGz-z5-x19" id="aM7-9X-1Ay"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

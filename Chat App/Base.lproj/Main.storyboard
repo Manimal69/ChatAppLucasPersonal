@@ -94,7 +94,7 @@
                                 <navigationItem title="Chat Room" id="gTX-eG-RC5">
                                     <barButtonItem key="leftBarButtonItem" title="Back" id="J49-oz-25Y">
                                         <connections>
-                                            <segue destination="6Cf-zW-9xx" kind="unwind" unwindAction="cancelToChatViewControllerWithSegue:" id="8um-fr-m5T"/>
+                                            <segue destination="6Cf-zW-9xx" kind="unwind" unwindAction="cancelToChatViewControllerWithSegue:" id="2Vu-2C-euE"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
