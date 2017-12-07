@@ -14,16 +14,20 @@
  * limitations under the License.
  */
 
-#ifndef FIR_SWIFT_NAME
+NS_ASSUME_NONNULL_BEGIN
 
-#import <Foundation/Foundation.h>
+/**
+ * Placeholder values you may write into Firebase Database as a value or priority
+ * that will automatically be populated by the Firebase Database server.
+ */
+NS_SWIFT_NAME(ServerValue)
+@interface FIRServerValue : NSObject
 
-// NS_SWIFT_NAME can only translate factory methods before the iOS 9.3 SDK.
-// Wrap it in our own macro if it's a non-compatible SDK.
-#ifdef __IPHONE_9_3
-#define FIR_SWIFT_NAME(X) NS_SWIFT_NAME(X)
-#else
-#define FIR_SWIFT_NAME(X)  // Intentionally blank.
-#endif                     // #ifdef __IPHONE_9_3
+/**
+ * Placeholder value for the number of milliseconds since the Unix epoch
+ */
++ (NSDictionary *) timestamp;
 
-#endif  // FIR_SWIFT_NAME
+@end
+
+NS_ASSUME_NONNULL_END

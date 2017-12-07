@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
@@ -15,6 +16,11 @@ class ViewController: UIViewController {
     @IBAction func cancelToChatViewController(segue:UIStoryboardSegue) {
         
     }
+    var numMessages: Int?
+    var roomKey: String!
+    var username: String!
+    var firebase = Database.database().reference()
+    var isIncog: Bool!
 
     override func viewDidLoad() {
     
@@ -32,13 +38,11 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let navController = segue.destination as? UINavigationController {
-            let dest = navController.topViewController as! ChatTableRoomViewController
+            let dest = navController.topViewController as! TableViewController
             dest.roomKey = self.roomidTextField.text!
             dest.username = self.usernameTextField.text!
             dest.isIncog = self.incognitomodeSwitch.isOn
-    }
-
-    
+        }
     }
 
 }

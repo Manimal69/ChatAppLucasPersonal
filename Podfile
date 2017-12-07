@@ -7,6 +7,7 @@ target 'Chat App' do
 
   # Pods for Chat App
 pod 'Firebase/Core'
+pod 'Firebase/Database'
 
 
 end

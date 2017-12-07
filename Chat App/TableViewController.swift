@@ -9,7 +9,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    var roomKey: String!
+    var isIncog: Bool!
+    var username: String!
     override func viewDidLoad() {
         super.viewDidLoad()
         let name = UINib(nibName: "ChatCellTableViewCell", bundle: nil)
@@ -34,12 +36,19 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
+        var numRows: Int = 1
+        var numMessages: Int?
+        if section == 0 {
+            numRows = numMessages ?? 0
+        }
+        return numRows
+
     }
 
     /*
